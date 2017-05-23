@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BgmRodotec.Solution.DesignPatterns.Comportamentais", "BgmRodotec.Solution.DesignPatterns\BgmRodotec.Solution.DesignPatterns.Comportamentais.csproj", "{B9513072-67EC-47AA-AEB2-6E0D7D6AD23E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BgmRodotec.Solution.DesignPatterns.Estruturais", "BgmRodotec.Solution.DesignPatterns.Estruturais\BgmRodotec.Solution.DesignPatterns.Estruturais.csproj", "{CB39F38B-4513-455A-A153-1BAAB129D826}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9513072-67EC-47AA-AEB2-6E0D7D6AD23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9513072-67EC-47AA-AEB2-6E0D7D6AD23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9513072-67EC-47AA-AEB2-6E0D7D6AD23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9513072-67EC-47AA-AEB2-6E0D7D6AD23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB39F38B-4513-455A-A153-1BAAB129D826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB39F38B-4513-455A-A153-1BAAB129D826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB39F38B-4513-455A-A153-1BAAB129D826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB39F38B-4513-455A-A153-1BAAB129D826}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
