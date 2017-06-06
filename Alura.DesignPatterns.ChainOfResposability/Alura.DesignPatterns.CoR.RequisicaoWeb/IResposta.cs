@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Alura.DesignPatterns.CoR.RequisicaoWeb
 {
-    public interface IFormato
+    public interface IResposta
     {
-        void Formata(Conta conta, Requisicao requisicao);
-        Formato proximo { get; set; }
+        void Responde(Requisicao req, Conta conta);
+        IResposta Proxima { get; set; }
     }
 }

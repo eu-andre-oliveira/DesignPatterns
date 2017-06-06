@@ -10,6 +10,15 @@ namespace Alura.DesignPatterns.CoR.RequisicaoWeb
     {
         static void Main(string[] args)
         {
+            Conta conta = new Conta("Andre", 500.00);
+
+            Requisicao req = new Requisicao(Formato.XML);
+
+            CalculadorDeFormato calc = new CalculadorDeFormato();
+
+            calc.RetornaFormato(req, conta);
+
+            Console.ReadKey();
         }
     }
 }

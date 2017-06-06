@@ -8,8 +8,13 @@ namespace Alura.DesignPatterns.CoR.RequisicaoWeb
 {
     public class Conta
     {
-        public String Nome { get; set; }
-        public double Saldo { get; set; }
+        public String Titular { get; private set; }
+        public double Saldo { get; private set; }
 
+        public Conta(String titular, double saldo)
+        {
+            this.Titular = titular;
+            this.Saldo = saldo;
+        }
     }
 }

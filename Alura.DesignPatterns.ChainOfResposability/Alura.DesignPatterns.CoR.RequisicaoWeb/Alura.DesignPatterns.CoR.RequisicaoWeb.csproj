@@ -45,11 +45,13 @@
   <ItemGroup>
     <Compile Include="CalculadorDeFormato.cs" />
     <Compile Include="Conta.cs" />
-    <Compile Include="FormatoXML.cs" />
-    <Compile Include="IFormato.cs" />
+    <Compile Include="IResposta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requisicao.cs" />
+    <Compile Include="RespostaEmCsv.cs" />
+    <Compile Include="RespostaEmPorcento.cs" />
+    <Compile Include="RespostaEmXml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
