@@ -6,32 +6,36 @@ using System.Threading.Tasks;
 
 namespace Alura.DesignPatterns.TemplateMethod
 {
-    public class IKCV : TemplateImposto
+    public class IHIT : TemplateImposto
     {
         protected override bool DeveUsarTaxacaoMaxima(Orcamento orcamento)
         {
-            return orcamento.Valor > 500 && TemItemComValorMaiorQue100(orcamento);
+            if (Tem2ItensComMesmoNome(orcamento))
+                return true;
+            return false;
+
         }
 
-        private bool TemItemComValorMaiorQue100(Orcamento orcamento)
+        private bool Tem2ItensComMesmoNome(Orcamento orcamento)
         {
-            foreach (Item i in orcamento.Itens)
-            {
-                if (i.Valor > 100)
+            IList<string> Nomes = new List<string>();
+
+            foreach (Item item in orcamento.Itens)
+                if (Nomes.Contains(item.Nome))
                     return true;
-            }
+                else
+                    Nomes.Add(item.Nome);
             return false;
         }
 
         protected override double TaxacaoMaxima(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.1;
+            return orcamento.Valor * 0.13 + 100;
         }
 
         protected override double TaxacaoMinima(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.06;
+            return 0.01 * orcamento.Itens.Count();
         }
-
     }
 }

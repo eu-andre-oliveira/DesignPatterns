@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICPP.cs" />
+    <Compile Include="IHIT.cs" />
     <Compile Include="IKCV.cs" />
     <Compile Include="TemplateImposto.cs" />
     <Compile Include="Item.cs" />

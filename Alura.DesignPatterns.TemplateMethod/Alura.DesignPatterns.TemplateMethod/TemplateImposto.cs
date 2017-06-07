@@ -14,9 +14,9 @@ namespace Alura.DesignPatterns.TemplateMethod
                 return TaxacaoMaxima(orcamento);
             return TaxacaoMinima(orcamento);        
         }
-        public abstract bool DeveUsarTaxacaoMaxima(Orcamento orcamento);
-        public abstract double TaxacaoMaxima(Orcamento orcamento);
-        public abstract double TaxacaoMinima(Orcamento orcamento);
+        protected abstract bool DeveUsarTaxacaoMaxima(Orcamento orcamento);
+        protected abstract double TaxacaoMaxima(Orcamento orcamento);
+        protected abstract double TaxacaoMinima(Orcamento orcamento);
 
     }
 }
